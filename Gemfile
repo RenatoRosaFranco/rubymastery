@@ -57,6 +57,7 @@ group :development do
   gem 'simplecov'
   gem 'brakeman'
   gem 'shoulda'
+  gem 'rails-erd'
 end
 
 group :test do

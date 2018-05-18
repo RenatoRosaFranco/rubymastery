@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  
   # API
   # @implemented
   namespace :api, path: '/', constraints: { subdomain: 'api' } do 
@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   devise_for :users
 
-  resources :courses, only: [:index, :show]
-  resources :pricing, only: [:index]
+  resources :courses,     only: [:index, :show]
+  resources :pricing,     only: [:index]
+  resources :conferences, only: [:index, :show]
 end
